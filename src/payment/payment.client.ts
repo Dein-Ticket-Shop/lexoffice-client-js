@@ -1,4 +1,4 @@
-import { Err, Ok, Result } from 'ts-results';
+import { Err, Ok, Result } from 'ts-results-es';
 import { BaseClient } from '../base.client';
 import { handleRequestError, RequestError } from '../request-error';
 import { Payment } from './payment.type';

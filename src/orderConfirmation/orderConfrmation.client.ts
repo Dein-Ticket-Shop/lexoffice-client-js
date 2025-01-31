@@ -1,4 +1,4 @@
-import { Err, Ok, Result } from 'ts-results';
+import { Err, Ok, Result } from 'ts-results-es';
 import { DocumentFileId } from '..';
 import { BaseClient } from '../base.client';
 import { handleRequestError, RequestError } from '../request-error';

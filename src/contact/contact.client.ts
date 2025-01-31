@@ -9,7 +9,7 @@ import {
   ContactUpdateResponse,
   PagingParameters,
 } from '../index';
-import { Err, Ok, Result } from 'ts-results';
+import { Err, Ok, Result } from 'ts-results-es';
 import { handleRequestError, RequestError } from '../request-error';
 import { ContactFilterRetrieveResponse, OptionalFilters } from './contact.type';
 import uri from 'uri-tag';

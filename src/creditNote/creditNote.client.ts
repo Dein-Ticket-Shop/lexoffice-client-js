@@ -1,5 +1,5 @@
 import { BaseClient } from '../base.client';
-import { Err, Ok, Result } from 'ts-results';
+import { Err, Ok, Result } from 'ts-results-es';
 import { handleRequestError, RequestError } from '../request-error';
 import {
   CreditNoteCreate,

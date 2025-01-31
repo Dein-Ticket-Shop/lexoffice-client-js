@@ -38,7 +38,7 @@ function isAxiosError(error: Error | AxiosError): error is AxiosError<LexofficeE
 }
 
 function isLexofficeLegacyError(error: AxiosError): error is LexofficeLegacyError {
-  return error.response && error.response.data.IssueList;
+  return error.response && (error.response.data as any).IssueList;
 }
 
 export function handleRequestError(error: Error | AxiosError): RequestError {
@@ -251,11 +251,11 @@ export class RequestError extends Error {
 
 abstract class RequestLexofficeError extends RequestError {
   public readonly message!: string;
-  public declare readonly issueList: undefined;
+  declare public readonly issueList: undefined;
 }
 
 class RequestLexofficeLegacyError extends RequestError {
-  public declare readonly issueList: IssueList;
+  declare public readonly issueList: IssueList;
   constructor(statusText: string, status: number, issueList: IssueList) {
     super('Legacy: ' + statusText, undefined, status);
     this.issueList = issueList;
