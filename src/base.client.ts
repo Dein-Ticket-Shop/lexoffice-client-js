@@ -5,7 +5,7 @@ export abstract class BaseClient {
 
   constructor(apiKey: string) {
     this.axios = Axios.create({
-      baseURL: 'https://api.lexoffice.io/v1',
+      baseURL: 'https://api.lexware.io/v1',
       headers: {
         Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json',

@@ -82,11 +82,11 @@ yarn add @elbstack/lexoffice-client-js
 
 <h2 name="documentation">📚 Documentation</h2>
 
-You can find the official lexoffice API documentation [here](https://developers.lexoffice.io/docs/#lexoffice-api-documentation).
+You can find the official lexoffice API documentation [here](https://developers.lexware.io/docs/#lexoffice-api-documentation).
 
 <h2 name="usage" >🔑 Usage</h2>
 
-To get your API Key, you must already be a lexoffice user. Get it [here](https://app.lexoffice.de/settings/#/public-api).
+To get your API Key, you must already be a Lexware Office user. Get it [here](https://app.lexware.de/settings/#/public-api).
 
 ```ts
 import { Client } from '@elbstack/lexoffice-client-js';
